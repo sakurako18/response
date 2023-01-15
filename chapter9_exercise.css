@@ -10,15 +10,14 @@ header {
 }
 
 main {
-  width: 960px;
+  justify-content: center;
   margin: 50px auto;
   display: flex;
 }
 
 .step-box {
   width: 300px;
-  margin-right: 30px;
-  margin-bottom: 20px;
+  margin: 0px 30px 0px 0px;
   padding: 10px;
   position: relative;
   background-color: #eee;
@@ -58,7 +57,7 @@ main {
 }
 
 .title {
-  margin: 15px 0 5px;
+  margin: 15px 0px 5px;
 }
 
 footer {
@@ -67,19 +66,25 @@ footer {
 }
 
 .flexbox {
+  width: 960px;
   display: flex;
 }
 
 @media screen and (max-width: 768px) {
 .flexbox {
-  display: block;
-}
-.flexbox .box1 {
-   width: 100%;
-   margin: 0 auto;
-}
-.flexbox .box2 {
   width: 100%;
-  margin: 0 auto;
+  display: block;
+  margin: auto;
+}
+.step-box {
+   width: 90%;
+   margin-bottom: 20px;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+.step-box:last-child {
+   margin-bottom: 0px;
+   margin-left: 30px;
+   margin-right: 30px;
 }
 }
